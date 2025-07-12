@@ -1,31 +1,32 @@
 /* GLOBAL MODIFICATIONS */
 
-/* Fix the first header on every page */
+/* FIRST header on every page */
 header:first-of-type {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 80px; /* Set to desired height */
+    height: 80px; /* Adjust as preferred */
     background-color: #f8f8f8;
-    z-index: 1000;
+    z-index: 1000; /* Ensure it stays on top */
     border-bottom: 1px solid #ccc;
 }
 
-/* Fix the footer on every page */
+/* Footer on every page */
 footer {
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 60px; /* Set to desired height */
+    height: 60px; /* Adjust as preferred */
     background-color: #f0f0f0;
     z-index: 1000;
     border-top: 1px solid #ccc;
 }
 
-/* Add space for header and footer so content isn't hidden */
+/* Main wrapper to avoid overlap with fixed header/footer */
 #wrapper {
-    margin-top: 80px;   /* Same as header height */
-    margin-bottom: 60px; /* Same as footer height */
+    margin-top: 80px;  /* Equal to header height */
+    margin-bottom: 60px;  /* Equal to footer height */
+    padding: 0 20px;
 }
