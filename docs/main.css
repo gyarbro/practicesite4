@@ -233,6 +233,7 @@ div.articles4 {
   opacity: 1;
 }
 
+aside.index,
 aside.one,
 aside.two,
 aside.three,
@@ -243,6 +244,7 @@ aside.five {
   overflow: hidden;
 }
 
+aside.index:hover,
 aside.one:hover,
 aside.two:hover,
 aside.three:hover,
