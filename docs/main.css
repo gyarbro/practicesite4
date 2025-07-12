@@ -233,23 +233,4 @@ div.articles4 {
   opacity: 1;
 }
 
-.page-index aside.index-sidebar {
-  width: 160px;           
-  transition: width 0.3s ease;  
-  overflow: hidden;       
-}
-
-.page-index aside.index-sidebar:hover {
-  width: 220px;           
-}
-
-.page-five aside.five-sidebar {
-  width: 160px;
-  transition: width 0.3s ease;
-  overflow: hidden;
-}
-
-.page-five aside.five-sidebar:hover {
-  width: 220px;
-}
 
