@@ -258,28 +258,4 @@ h1, h2 {
 }
 
 /* rest of your CSS */
-/* Select the ul inside your navigation */
-nav ul {
-  list-style: none;         /* Remove default bullets */
-  padding: 0;               /* Remove default padding */
-  margin: 0;                /* Remove default margin */
-  
-  display: flex;            /* Make the list items line up horizontally */
-  gap: 20px;                /* Space between items */
-}
-
-/* Optional: style the individual links */
-nav ul li a {
-  text-decoration: none;    /* Remove underline */
-  color: #333;              /* Text color */
-  font-weight: bold;
-  padding: 10px 15px;       /* Some padding around the links */
-  display: block;           /* Make clickable area cover padding */
-}
-
-/* Optional: add a hover effect */
-nav ul li a:hover {
-  background-color: #eee;   /* Light background on hover */
-  border-radius: 5px;
-}
 
