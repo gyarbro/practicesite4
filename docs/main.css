@@ -39,6 +39,8 @@ background-color:#282828;
 background-size:16px 16px;
 	color: white;
 	float: none;
+	
+	z-index: 1000;
 	}
 	
 footer {
