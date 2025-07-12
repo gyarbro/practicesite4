@@ -232,3 +232,21 @@ div.articles4 {
 .gallery figure:hover figcaption {
   opacity: 1;
 }
+
+aside.one,
+aside.two,
+aside.three,
+aside.four,
+aside.five {
+  width: 160px;
+  transition: width 0.3s ease;
+  overflow: hidden;
+}
+
+aside.one:hover,
+aside.two:hover,
+aside.three:hover,
+aside.four:hover,
+aside.five:hover {
+  width: 220px;
+}
