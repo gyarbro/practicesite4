@@ -233,3 +233,49 @@ div.articles4 {
   opacity: 1;
 }
 
+/* The sidebar (hidden by default) */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 60px;
+  z-index: 1001;
+}
+
+/* Sidebar links */
+.sidenav a {
+  padding: 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #ccc;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: white;
+}
+
+/* Close button */
+.sidenav .closebtn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 36px;
+}
+
+/* Hamburger icon */
+.menu-icon {
+  font-size: 30px;
+  cursor: pointer;
+  padding: 10px;
+  color: white;
+  background-color: #444;
+  display: inline-block;
+  margin: 10px;
+}
