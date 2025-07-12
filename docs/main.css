@@ -234,13 +234,13 @@ div.articles4 {
 }
 
 .page-index aside.index-sidebar {
-  width: 160px;           /* small closet */
-  transition: width 0.3s ease;  /* smooth opening */
-  overflow: hidden;       /* hide anything sticking out */
+  width: 160px;           
+  transition: width 0.3s ease;  
+  overflow: hidden;       
 }
 
 .page-index aside.index-sidebar:hover {
-  width: 220px;           /* closet gets bigger when hovered */
+  width: 220px;           
 }
 
 .page-five aside.five-sidebar {
