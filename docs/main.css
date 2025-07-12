@@ -151,3 +151,58 @@ div.articles4 {
 	margin: 1em 2em 1em 0;
 	width: 25%;
 	}
+
+/*Modifications to Page Five / In Line Gallery*/
+/* General gallery container */
+.gallery {
+  text-align: center; /* Center inline-block items */
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Each figure represents an image + caption */
+.gallery figure {
+  display: inline-block;
+  margin: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.gallery figure:hover {
+  transform: scale(1.03);
+}
+
+/* Images inside the gallery */
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Fit while clipping */
+  object-position: center; /* Center the image content */
+  display: block;
+}
+
+/* Caption overlay */
+.gallery figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay */
+  color: white;
+  padding: 10px;
+  font-size: 1em;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Show overlay on hover */
+.gallery figure:hover figcaption {
+  opacity: 1;
+}
