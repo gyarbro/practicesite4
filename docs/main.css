@@ -247,4 +247,15 @@ footer {
 	background-size: 16px 48px;
 	color: white; /* Ensure text is readable */
 }
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2 {
+  font-family: 'Merriweather', serif;
+}
+
+/* rest of your CSS */
 
