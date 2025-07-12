@@ -1,1 +1,33 @@
 /* Please insert all your CSS code into this document */
+/* GLOBAL MODIFICATIONS */
+
+/* FIRST header on every page */
+header:first-of-type {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px; /* Adjust as preferred */
+    background-color: #f8f8f8;
+    z-index: 1000; /* Ensure it stays on top */
+    border-bottom: 1px solid #ccc;
+}
+
+/* Footer on every page */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px; /* Adjust as preferred */
+    background-color: #f0f0f0;
+    z-index: 1000;
+    border-top: 1px solid #ccc;
+}
+
+/* Main wrapper to avoid overlap with fixed header/footer */
+#wrapper {
+    margin-top: 80px;  /* Equal to header height */
+    margin-bottom: 60px;  /* Equal to footer height */
+    padding: 0 20px;
+}
