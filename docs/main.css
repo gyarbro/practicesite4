@@ -232,3 +232,33 @@ div.articles4 {
 .gallery figure:hover figcaption {
   opacity: 1;
 }
+
+/* Header scroll animation */
+header {
+  transition: all 0.3s ease;
+  height: 75px;
+  padding: 0.5em 1em;
+  background-color: #282828;
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+header.scrolled {
+  height: 50px;
+  padding: 0.2em 1em;
+  background-color: #1c1c1c;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.7);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+  transition: font-size 0.3s ease;
+}
+
+header.scrolled h1 {
+  font-size: 1.5rem;
+}
