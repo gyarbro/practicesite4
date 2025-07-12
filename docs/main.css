@@ -31,3 +31,17 @@ footer {
   margin-top: 40px;  
   margin-bottom: 30px; 
 }
+
+#onePage .page-section {
+	background-color: #f9f9f9;
+	padding: 20px;
+}
+
+#onePage .page-section h2 {
+	color: #336699;
+}
+
+#onePage .content-block p {
+	font-size: 1.1em;
+	line-height: 1.6;
+}
