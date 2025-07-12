@@ -151,7 +151,7 @@ div.articles4 {
 	margin: 1em 2em 1em 0;
 	width: 25%;
 	}
-/* === Page Five: Inline-Block Image Gallery with Object-Fit & Drop Shadows === */
+/* === Page Five: Inline-Block Image Gallery with Object-Fit, Drop Shadows, and Overlays === */
 
 #page-five .gallery-container {
     text-align: center;
@@ -161,11 +161,11 @@ div.articles4 {
 
 #page-five .gallery-item {
     display: inline-block;
+    position: relative;
     margin: 10px;
     width: 180px;
     height: 180px;
     vertical-align: top;
-    text-align: center;
     background-color: #f9f9f9;
     border-radius: 6px;
     overflow: hidden;
@@ -184,17 +184,31 @@ div.articles4 {
     object-fit: cover;
     object-position: center;
     display: block;
+    transition: transform 0.3s ease;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 
+/* Overlay caption */
 #page-five .gallery-item figcaption {
-    padding: 8px 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
     font-size: 0.9em;
-    color: #333;
-    background-color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
 }
 
-/* Optional: Responsive adjustment */
+/* Show overlay on hover */
+#page-five .gallery-item:hover figcaption {
+    opacity: 1;
+}
+
+/* Optional: Responsive adjustments */
 @media (max-width: 600px) {
     #page-five .gallery-item {
         width: 100%;
@@ -204,5 +218,11 @@ div.articles4 {
 
     #page-five .gallery-item img {
         height: auto;
+    }
+
+    #page-five .gallery-item figcaption {
+        position: relative;
+        opacity: 1;
+        background: #333;
     }
 }
