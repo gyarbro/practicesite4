@@ -233,7 +233,7 @@ div.articles4 {
   opacity: 1;
 }
 
-/* Header scroll animation */
+/* Animate fixed header on scroll */
 header {
   transition: all 0.3s ease;
   height: 75px;
@@ -246,6 +246,7 @@ header {
   z-index: 1000;
 }
 
+/* Shrink header on scroll */
 header.scrolled {
   height: 50px;
   padding: 0.2em 1em;
@@ -257,8 +258,24 @@ header h1 {
   margin: 0;
   font-size: 2.2rem;
   transition: font-size 0.3s ease;
+  text-align: center;
 }
 
+/* Shrink heading text */
 header.scrolled h1 {
   font-size: 1.5rem;
+}
+
+/* Make room below the fixed header */
+#wrapper {
+  margin-top: 90px; /* Adjust this to match your header's height + some spacing */
+  margin-bottom: 105px; /* Keeps the footer from overlapping */
+}
+
+/* Center and scale banner images */
+figure img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  max-width: 100%;
 }
