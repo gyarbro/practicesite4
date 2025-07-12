@@ -233,13 +233,4 @@ div.articles4 {
   opacity: 1;
 }
 
-aside.five-sidebar {
-  position: relative;
-  left: 0;
-  transition: left 0.3s ease;
-}
-
-aside.five-sidebar:hover {
-  left: 10px;
-}
 
