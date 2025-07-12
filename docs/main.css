@@ -233,14 +233,23 @@ div.articles4 {
   opacity: 1;
 }
 
-aside.index,
-aside.five {
+.page-index aside.index-sidebar {
+  width: 160px;           /* small closet */
+  transition: width 0.3s ease;  /* smooth opening */
+  overflow: hidden;       /* hide anything sticking out */
+}
+
+.page-index aside.index-sidebar:hover {
+  width: 220px;           /* closet gets bigger when hovered */
+}
+
+.page-five aside.five-sidebar {
   width: 160px;
   transition: width 0.3s ease;
   overflow: hidden;
 }
 
-aside.index:hover,
-aside.five:hover {
+.page-five aside.five-sidebar:hover {
   width: 220px;
 }
+
