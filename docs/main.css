@@ -191,7 +191,7 @@ div.articles4 {
 .gallery figure {
   display: inline-block;
   margin: 15px;
-  border: 10px solid #B6B095;
+  border: 10px solid #ccc;
   border-radius: 10px;
   overflow: hidden;
   position: relative;
