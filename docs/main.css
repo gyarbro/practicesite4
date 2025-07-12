@@ -1,4 +1,14 @@
 /* Global Modifications */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+/* Use Lobster for headings */
+h1, h2, header.title {
+  font-family: 'Lobster', cursive;
+}
+
+/* Keep body text clean and readable */
+body {
+  font-family: Arial, sans-serif;
+}
 
 h1 {
 	padding: .2em .5em 1em;
