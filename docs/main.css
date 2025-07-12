@@ -1,246 +1,153 @@
-/* GLOBAL MODIFICATIONS */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* Global Modifications */
 
 h1 {
-    padding: 0.2em 0.5em 1em;
-    font-size: 2em;
-}
+	padding: .2em .5em 1em;
+	}
 
 h2 {
-    padding: 0.2em;
-    text-align: center;
-    font-weight: 700;
-}
+	padding: .2em;
+	text-align: center;
+	}
 
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-/* Banner image */
 .banner {
-    display: block;
-    margin: auto;
-    width: 80%;
-}
+	display: block;
+	margin: auto;
+	width: 80%;
+	}
 
-/* Fixed header */
 header.title {
-    position: fixed;
-    top: 0;
-    height: 50px;
-    width: 100%;
-    background: repeating-linear-gradient(
-        45deg,
-        #ffffff,
-        #ffffff 10px,
-        #f0f0f0 10px,
-        #f0f0f0 20px
-    );
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-    transition: all 0.3s ease;
-}
-
-/* Fixed footer */
+	position: fixed;
+	top: 0;
+	height: 75px;
+	width: 100%;
+	background: white;
+	float: none;
+	}
+	
 footer {
-    position: fixed;
-    bottom: 0;
-    height: 100px;
-    width: 100%;
-    background: repeating-linear-gradient(
-        135deg,
-        #ffffff,
-        #ffffff 10px,
-        #f0f0f0 10px,
-        #f0f0f0 20px
-    );
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-}
+	position: fixed;
+	bottom: 0;
+	height: 100px;
+	width: 100%;
+	background: white;
+	}
 
 #wrapper {
-    margin-top: 80px;
-    margin-bottom: 105px;
-    padding: 1em;
-}
+	margin: 80px 0 105px 0;
+	}
 
 article {
-    float: none;
-}
+	float: none;
+	}
 
 article p:last-of-type {
-    padding-bottom: 2em;
-}
+	padding: 0 0 2em;
+	}
 
-/* PAGE ONE – FIXED POSITION LAYOUT */
+
+
+/* Modifications to Page One / Fixed Position Layout */
+
 aside.one {
-    position: fixed;
-    left: 0;
-    width: 160px;
-    padding: 0 0.4em;
-    animation: slideIn 1s ease-out;
-}
+	position: fixed;
+	left: 0;
+	width: 160px;
+	padding: 0 .4em;
+	}
 
 div.articles1 {
-    position: fixed;
-    left: 160px;
-    height: 400px;
-    width: 750px;
-    padding: 0 0.2em;
-    overflow: scroll;
-}
+	position: fixed;
+	left: 160px;
+	height: 400px;
+	width: 750px;
+	padding: 0 .2em;
+	overflow: scroll;
+	}
 
 img.body1 {
-    width: 100%;
-    max-width: 300px;
-}
+	width: 300px;
+	}
 
-/* PAGE TWO – FLOATING POSITION LAYOUT */
+/* Modifications to Page Two / Floating Position Layout */
+
 aside.two {
-    float: left;
-    min-width: 130px;
-}
+	float: left;
+	min-width: 130px;
+	}
 
 div.articles2 {
-    min-height: 400px;
-    min-width: 350px;
-    padding: 0 30px;
-    overflow: scroll;
-}
-
-.left2, .right2 {
-    width: 170px;
-    margin: 10px;
-}
-
+	min-height: 400px;
+	min-width: 350px;
+	padding: 0 30px;
+	overflow: scroll;
+	}
+	
 .left2 {
-    float: left;
-    margin-right: 35px;
-}
+	float: left;
+	margin: 10px 35px 10px 0px;
+	width: 170px;
+	}
 
 .right2 {
-    float: right;
-    margin-left: 35px;
-}
+	float: right;
+	margin: 10px 0px 10px 35px;
+	width: 170px;
+	}
 
-/* PAGE THREE – RESPONSIVE LAYOUT */
+
+
+/* Modifications to Page Three / Relative Position Layout */
+
 aside.three {
-    float: left;
-    min-width: 130px;
-}
+	float: left;
+	min-width: 130px;
+	}
 
 div.articles3 {
-    min-height: 400px;
-    min-width: 350px;
-    padding: 0 1em;
-    overflow: scroll;
-}
-
-.left3, .right3 {
-    width: 25%;
-    margin: 1em;
-}
-
-.left3 {
-    float: left;
-    margin-right: 2em;
-}
+	min-height: 400px;
+	min-width: 350px;
+	padding: 0 1em;
+	overflow: scroll;
+	}
 
 .right3 {
-    float: right;
-    margin-left: 2em;
-}
+	float: right;
+	margin: 1em 0em 1em 2em;
+	width: 25%;
+	}
 
-/* PAGE FOUR – INLINE-BLOCK LAYOUT */
+.left3 {
+	float: left;
+	margin: 1em 2em 1em 0;
+	width: 25%;
+	}
+
+
+/* Modifications to Page Four / Inline-Block Layout */
+
 aside.four {
-    display: inline-block;
-    vertical-align: top;
-    width: 20%;
-    min-width: 130px;
-}
+	display: inline-block;
+	vertical-align: top;
+	width: 20%;
+	min-width: 130px;
+	}
 
 div.articles4 {
-    display: inline-block;
-    vertical-align: top;
-    width: 75%;
-    min-height: 400px;
-    min-width: 350px;
-}
+	display: inline-block;
+	vertical-align: top;
+	width: 75%;
+	min-height: 400px;
+	min-width: 350px;
+	}
 
-/* INLINE-BLOCK IMAGE GALLERY */
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-    justify-content: center;
-    padding: 1em;
-}
+.right4 {
+	float: right;
+	margin: 1em 0em 1em 2em;
+	width: 25%;
+	}
 
-.gallery figure {
-    display: inline-block;
-    width: 100%;
-    max-width: 200px;
-    margin: 0;
-    position: relative;
-    overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    transition: transform 0.3s ease;
-}
-
-.gallery figure:hover {
-    transform: scale(1.05);
-}
-
-.gallery img {
-    width: 100%;
-    aspect-ratio: 4 / 3;
-    object-fit: cover;
-    object-position: center;
-    transition: opacity 0.3s ease;
-}
-
-.gallery figcaption {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background: rgba(0,0,0,0.6);
-    color: white;
-    font-size: 0.9em;
-    text-align: center;
-    padding: 0.5em 0;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.gallery figure:hover figcaption {
-    opacity: 1;
-}
-
-/* ANIMATIONS */
-@keyframes slideIn {
-    from {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-/* HEADER SCROLL ANIMATION */
-header.title.scrolled {
-    background-color: #eee;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
+.left4 {
+	float: left;
+	margin: 1em 2em 1em 0;
+	width: 25%;
+	}
