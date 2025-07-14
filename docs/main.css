@@ -232,3 +232,14 @@ div.articles4 {
 .gallery figure:hover figcaption {
   opacity: 1;
 }
+
+header.title {
+  transition: all 0.3s ease;
+}
+
+header.title.shrink {
+  height: 50px;
+  background-color: #1a1a1a; /* optional: darker when scrolled */
+  font-size: 0.9em; /* optional: reduce font */
+  padding: 0.5em;
+}
